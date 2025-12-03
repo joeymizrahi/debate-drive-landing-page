@@ -5,7 +5,8 @@ import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import Link from 'next/link';
 import { 
   Mic, Zap, ShieldCheck, ChevronLeft, Menu, X, User, 
-  Facebook, Instagram, Mail, Phone, Send, MessageCircle 
+  Facebook, Instagram, Mail, Phone, Send, MessageCircle, 
+  Box
 } from 'lucide-react';
 
 export default function LandingPage() {
@@ -58,13 +59,12 @@ export default function LandingPage() {
         </div>
 
         <h1 className="text-5xl font-black tracking-tighter mb-6 leading-[1.1]">
-          הכביש הוא <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-300">הבמה שלך.</span>
+         מעלים הילוך<br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-300">בשיח הישראלי</span>
         </h1>
         
         <p className="text-muted text-lg leading-relaxed mb-10 max-w-xs mx-auto">
-          רשת דיבייט קולית לנהגים.
-          בלי מסכים, בלי הקלדות. רק אתם, הדרך, והטיעון המנצח.
+         הרשת החברתית-קולית הראשונה לנהגים. שומרים על ערנות, מכירים את האחר 
         </p>
 
         <div className="flex flex-col gap-4">
@@ -91,18 +91,18 @@ export default function LandingPage() {
         <div className="space-y-12">
           <FeatureCard 
             icon={<Mic className="w-8 h-8 text-primary" />}
-            title="בוחרים נושא"
-            desc="בוחרים נושא שבוער בכם - פוליטיקה, ספורט, או פילוסופיה."
+            title="בוחרים עמדה."
+            desc="בוחרים נושא שבוער בנו -דת מדינה ימין ושמאל וכל דבר שמפחדים לריב בו במשפחה."
           />
           <FeatureCard 
-            icon={<Zap className="w-8 h-8 text-yellow-400" />}
-            title="התאמה חכמה"
-            desc="האלגוריתם שלנו מוצא לכם יריב שנמצא גם הוא בדרכים וחושב בדיוק ההפך."
+            icon={<Box className="w-8 h-8 text-yellow-400" />}
+            title="יוצאים מתיבת התהודה"
+            desc="האלגוריתם שלנו מוצא לכם את מי שהאלגוריתם של הרשתות החברתיות מסתיר מכם  וחושב בדיוק ההפך."
           />
           <FeatureCard 
             icon={<ShieldCheck className="w-8 h-8 text-green-400" />}
-            title="דיבייט בטוח"
-            desc="שיחה קולית בלבד. העיניים על הכביש, הידיים על ההגה, הראש בדיון."
+            title="מתווכחים בטוח"
+            desc="דיון ענייני שמשאיר אותנו עירניים בנהיגה ומאוחדים במדינה"
           />
         </div>
       </section>
@@ -111,9 +111,12 @@ export default function LandingPage() {
       <section id="waitlist" className="py-24 px-6 relative">
         <div className="max-w-sm mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold mb-4">רוצים גישה מלאה?</h2>
+            <h2 className="text-3xl font-bold mb-4">רוצים להבין מה אתה התפקיד שלכם בסיפור ?</h2>
             <p className="text-muted">
-              הירשמו עכשיו כדי להיות הראשונים שמקבלים גישה לפיצ'ר השיחות החיות.
+              הירשמו עכשיו כדי להיות האנשים שבונים את Debate Drive! 
+            </p>
+            <p className="text-muted">
+             אם אתם אנשים שאוהבים לדבר על הנושאים שמפחדים לדבר עליהם בין חברים בואו לנצל את זה ולהציל חיים .
             </p>
           </div>
 
@@ -155,9 +158,9 @@ export default function LandingPage() {
           <div className="text-center text-xs text-gray-600 pt-6">
             <p className="mb-2">© 2024 Debate Drive Alpha.</p>
             <div className="flex justify-center gap-4">
-              <a href="#" className="hover:text-gray-400">תנאי שימוש</a>
+              {/* <a href="#" className="hover:text-gray-400">תנאי שימוש</a> */}
               <span className="text-gray-800">|</span>
-              <a href="#" className="hover:text-gray-400">פרטיות</a>
+              {/* <a href="#" className="hover:text-gray-400">פרטיות</a> */}
             </div>
           </div>
 
