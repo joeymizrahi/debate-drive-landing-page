@@ -129,10 +129,10 @@ export default function LandingPage() {
           <div className="text-center">
             <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">עקבו אחרינו לעדכונים</h4>
             <div className="flex justify-center gap-6">
-               <SocialLink href="#" icon={<MessageCircle size={24} />} label="WhatsApp" color="hover:text-green-500" />
-               <SocialLink href="#" icon={<Send size={24} />} label="Telegram" color="hover:text-blue-400" />
+               <SocialLink href="https://chat.whatsapp.com/EKoagLXksrSHWa90UtM6e8" icon={<MessageCircle size={24} />} label="WhatsApp" color="hover:text-green-500" />
+               <SocialLink href="https://t.me/+GQU-YtQPL0tlNjhk" icon={<Send size={24} />} label="Telegram" color="hover:text-blue-400" />
                <SocialLink href="#" icon={<Facebook size={24} />} label="Facebook" color="hover:text-blue-600" />
-               <SocialLink href="#" icon={<Instagram size={24} />} label="Instagram" color="hover:text-pink-500" />
+               <SocialLink href="https://www.instagram.com/debatesdrive/" icon={<Instagram size={24} />} label="Instagram" color="hover:text-pink-500" />
             </div>
           </div>
 
@@ -140,14 +140,14 @@ export default function LandingPage() {
           <div className="text-center space-y-3 pt-6 border-t border-white/5">
              <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-2">צרו קשר ישיר</h4>
              
-             <a href="mailto:contact@debatedrive.com" className="flex items-center justify-center gap-2 text-lg font-medium hover:text-primary transition">
+             <a href="mailto:debatesdrive@gmail.com" className="flex items-center justify-center gap-2 text-lg font-medium hover:text-primary transition">
                <Mail size={18} />
-               contact@debatedrive.com
+               debatesdrive@gmail.com
              </a>
              
-             <a href="tel:+972500000000" className="flex items-center justify-center gap-2 text-lg font-medium hover:text-primary transition">
+             <a href="tel:+972505854505" className="flex items-center justify-center gap-2 text-lg font-medium hover:text-primary transition">
                <Phone size={18} />
-               050-000-0000
+               050-585-4505
              </a>
           </div>
 
