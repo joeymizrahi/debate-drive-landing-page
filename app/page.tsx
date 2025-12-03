@@ -83,7 +83,7 @@ export default function LandingPage() {
             onClick={() => setIsVideoOpen(true)}
             className="w-full bg-primary hover:bg-blue-600 text-white font-bold py-4 rounded-xl shadow-[0_0_25px_rgba(59,130,246,0.3)] transition-all active:scale-95 flex items-center justify-center gap-2 group"
           >
-            נסו את הדמו עכשיו
+לצפיה בדמו              
             <PlayCircle size={20} className="group-hover:scale-110 transition-transform" />
           </button>
           
